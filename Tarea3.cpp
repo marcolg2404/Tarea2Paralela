@@ -12,7 +12,7 @@
 /* Función que calcula la varianza de los numeros dentro del arreglo */
 float varianza (int arreglo[],float prom ){
         float var;
-        for(int i=0; i<=100000; i++) {
+        for(int i=0; i<=N; i++) {
                 var += pow(arreglo[i]-prom,2);
                 var=var/prom;
         }
@@ -121,7 +121,7 @@ int main(void){
                 cout<<"Promedio total:"<<promediototal<<endl; //Salida por pantalla del promedio total
                 cout<<"Varianza: "<<varianza(arreglo,(promediototal))<<endl; //Salida por pantalla de la varianza (Se llama a la función varianza() )
                 desv=(sqrt(varianza(arreglo,promediototal))); // Se calcula la desviación utilizando la función de varianza
-                cout<<"Desviación: "<<desv<<endl; //Salida por pantalla de la desviación 
+                cout<<"Desviación: "<<desv<<endl; //Salida por pantalla de la desviación
 
         }
 /**************************Procesos para procesador 0******************************/
